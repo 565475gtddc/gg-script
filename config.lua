@@ -1,9 +1,7 @@
--- 版本信息
-SCRIPT_VERSION = "1.0"
+SCRIPT_VERSION = "2.0"
 SCRIPT_AUTHOR = "悲悯忬"
-BILIBILI = "澜打野 (纯娱乐)"
+BILIBILI = "澜打野"
 
--- 功能名称列表
 FEATURE_NAMES = {
     "一技能无冷却",
     "二技能无冷却",
@@ -15,7 +13,6 @@ FEATURE_NAMES = {
     "改金币"
 }
 
--- 公告列表
 ANNOUNCEMENTS = {
     "月光再亮，也照不亮心底的暗角",
     "落叶知秋，却不知我心中的愁",

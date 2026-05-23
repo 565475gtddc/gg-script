@@ -1,4 +1,3 @@
--- S_Pointer函数
 function S_Pointer(t_So, t_Offset, _bit)
     local function getRanges()
         local ranges = {}
@@ -52,8 +51,7 @@ function S_Pointer(t_So, t_Offset, _bit)
     return _A
 end
 
--- 功能数据配置
-local functionData = {
+functionData = {
     {t = {"libil2cpp.so", "Cd"}, tt = {0x447D0, 0xB8, 0x70, 0x50, 0xA0}, flags = 16, value = 0},
     {t = {"libil2cpp.so", "Cd"}, tt = {0x455D0, 0xB8, 0x10, 0x30, 0xA4}, flags = 16, value = 0},
     {t = {"libil2cpp.so", "Cd"}, tt = {0x455E0, 0xB8, 0x30, 0x30, 0x90}, flags = 4, value = 6},
@@ -63,14 +61,3 @@ local functionData = {
     {t = {"libil2cpp.so", "Cd"}, tt = {0x455D0, 0xB8, 0x10, 0x30, 0x84}, flags = 4, value = 10000},
     {t = {"libil2cpp.so", "Cd"}, tt = {0x4E538, 0x80, 0xB8, 0x1C0, 0xD8}, flags = 4, value = 580}
 }
-
-function enableFeatureCloud(index)
-    local data = functionData[index]
-    if data then
-        local ttt = S_Pointer(data.t, data.tt, true)
-        local mod = {address = ttt, flags = data.flags, value = data.value, freeze = true}
-        gg.addListItems({mod})
-        return mod
-    end
-    return nil
-end

@@ -1,6 +1,6 @@
 SCRIPT_VERSION = "2.0"
-SCRIPT_AUTHOR = "悲悯忬"
-BILIBILI = "澜打野"
+SCRIPT_AUTHOR = "屿"
+QQ_GROUP = "QQ企鹅群1087982634"
 
 FEATURE_NAMES = {
     "一技能无冷却",
@@ -8,9 +8,8 @@ FEATURE_NAMES = {
     "无限奥义",
     "密卷无冷却",
     "通灵无冷却",
-    "改6豆",
-    "改无敌",
-    "改金币"
+    "替身无CD",
+    "改无敌"
 }
 
 ANNOUNCEMENTS = {
